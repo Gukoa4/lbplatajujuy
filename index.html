@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T5M849X');</script>
+<!-- End Google Tag Manager -->
+
+		<title>LB Plata Jujuy</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5M849X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+		<div class="scroll">		
+			<div class="over"></div>	
+			<div class="container">
+				<div class="row">
+					<div class="columna-1 col-md-6">
+						<div class="logo">
+						  <img src="img/Logo LB Blanco.png"  alt="LBPlataJujuy" />
+						</div>
+						<div class="tag">
+							<p>Te invitamos a conectarte</p>
+							<ul class="tag ">
+								<li>A visitar nuestras redes</li>
+								<li>A compartir</li>
+								<li>Somos un Tienda online</li>
+								<li>Ubicada en San Salvador de Jujuy</li>
+							</ul>
+						</div>
+
+						<div class="right-menu visible-xs visible-sm">
+						  <ul class="menu"><!--
+							--><li class="fb-icon">
+								<a href="https://www.facebook.com/LBPlataJujuy/" target="_blank">
+									<!-- <span>Facebook</span> -->
+									<img src="img/icon-facebook.svg" alt="">
+								</a>
+						    </li><!--
+							--><li class="tw-icon">
+						    	<a href="https://twitter.com" target="_blank">
+						       		<!-- <span>Twitter</span> -->
+						       		<img src="img/icon-twitter.svg" alt="">
+						       	</a>
+						    </li><!--
+							--><li class="in-icon">
+						    	<a href="https://www.instagram.com/lb.platajujuy" target="_blank">
+						      		<!-- <span>Instagram</span> -->
+						      		<img src="img/icon-instagram.svg" alt="">
+						      	</a>
+						    </li><!--
+							--><li class="yt-icon">
+						    	<a href="https://www.instagram.com" target="_blank">
+						      		<!-- <span>Instagram</span> -->
+						      		<img src="img/icon-youtube.svg" alt="">
+						      	</a>
+						    </li>
+						  </ul>
+						</div>
+						
+						<div class="row">
+							<div class="email-form col-md-8">
+								<p class="content">Escribinos un mensaje.</p>
+								<form id="ajax-contact" action="contact.php" method="POST" enctype="multipart/form-data">
+									<div class="row-form">
+										<input type="text" name="nombre" value="Nombre" id="name" required>
+									</div>
+									<div class="row-form">
+										<input type="email" name="email" value="Email" id="email" required>
+									</div>
+									<div class="row-form">
+										<textarea rows="6" cols="6" name="mensaje" id="mensaje" required>Mensaje</textarea>
+									</div>
+									<div class="row-form">
+										<input type="submit" value="Enviar">
+									</div>
+								</form>
+								<div id="form-messages"></div>
+								<!-- Formulario de contacto -->
+							</div>
+						</div>					
+					</div>
+
+					<div class="columna-2 hidden-xs hidden-sm">
+						<div class="right-menu">
+						 <ul class="menu">
+						    <li class="fb-icon">
+								<a href="https://www.facebook.com/LBPlataJujuy/" target="_blank">
+									<!-- <span>Facebook</span> -->
+									<img src="img/icon-facebook.svg" alt="">
+								</a>
+						    </li>
+						    <li class="tw-icon">
+						    	<a href="https://twitter.com/" target="_blank">
+						       		<!-- <span>Twitter</span> -->
+						       		<img src="img/icon-twitter.svg" alt="">
+						       	</a>
+						    </li>
+						    <li class="in-icon">
+						    	<a href="https://www.instagram.com/lb.platajujuy" target="_blank">
+						      		<!-- <span>Instagram</span> -->
+						      		<img src="img/icon-instagram.svg" alt="">
+						      	</a>
+						    </li>
+						    <li class="yt-icon">
+						    	<a href="https://www.youtube.com/" target="_blank">
+						      		<!-- <span>Youtube</span> -->
+						      		<img src="img/icon-youtube.svg" alt="">
+						      	</a>
+						    </li>
+						  </ul>
+						</div>
+					</div>
+				</div>	
+			</div> 
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>	 
+
+		<script type="text/javascript">
+
+			$('#ajax-contact input[type="text"], #ajax-contact input[type="email"]').on('focus', function(){
+				$(this).attr('value', '');
+			});
+
+			$('#ajax-contact textarea').on('focus', function(){
+				$(this).empty();
+			});
+
+		    // Get the form.
+		    var form = $('#ajax-contact');
+
+		    // Get the messages div.
+		    var formMessages = $('#form-messages');
+
+		    // Set up an event listener for the contact form.
+		    $(form).submit(function(event) {
+		        // Stop the browser from submitting the form.
+		        event.preventDefault();
+
+		            // Serialize the form data.
+		            var formData = $(form).serialize();
+
+		            // Submit the form using AJAX.
+		            $.ajax({
+		                type: 'POST',
+		                url: $(form).attr('action'),
+		                data: formData
+		            }).done(function(response) {
+		        	    // Make sure that the formMessages div has the 'success' class.
+		        	    $(formMessages).removeClass('error');
+		        	    $(formMessages).addClass('success');
+
+		        	    // Set the message text.
+		        	    $(formMessages).text(response);
+
+		        	    // Clear the form.
+		        	    $('#name').val('');
+		        	    $('#email').val('');
+		        	    $('#mensaje').val('');
+		        	}).fail(function(data) {
+		        	    // Make sure that the formMessages div has the 'error' class.
+		        	    $(formMessages).removeClass('success');
+		        	    $(formMessages).addClass('error');
+
+		        	    // Set the message text.
+		        	    if (data.responseText !== '') {
+		        	        $(formMessages).text(data.responseText);
+		        	    } else {
+		        	        $(formMessages).text('Algo salió mal y no pudimos enviar tu mensaje.');
+		        	    }
+		        	});	
+		    });
+
+		    
+
+
+		</script>
+	</body>
+</html>
