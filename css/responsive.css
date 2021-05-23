@@ -1,7 +1,7 @@
 @media screen and (max-width: 991px) {  
 
   body {
-    background-size: auto 75%;
+    background-size: auto 100%;
     background-position: center 0;
   }
 
@@ -55,12 +55,12 @@
 }
 
 
-@media (max-width:562px){
+@media (max-width:700px){
   .cta-content {
     margin-top:40px;
   }
   .cta-content .cta-content-link{
-    background-image:url(../img/cta-mobile.png);
+    background-image:url(../img/full-background.jpg);
     width: 423px;
     height:234px;
   }
